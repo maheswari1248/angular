@@ -1,0 +1,34 @@
+<p>course works!</p>
+<!-- <p *ngFor="let c of course" style="color:red">
+    {{c.id}}
+    {{ c.name}}
+</p>
+<p>{{mahe}}</p>
+
+
+<hr>
+
+
+
+
+
+<table>
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+    <tr *ngFor="let e of  employee">
+      <td>{{e.id}}</td>
+      <td>{{e.firstName}}</td>
+      <td>{{e.lastName}}</td>
+    </tr>
+  </table>
+   -->
+<div>
+  <a href="javascript:void(0)" (click)="onSelect(x)" [class.selected]="selected(x)" [class.onnext]="onnext(x)"  *ngFor="let x of course; ">
+  {{x.id+ "."}} {{x.name}} {{x.fees}} <br/>
+</a>
+</div>
+
+

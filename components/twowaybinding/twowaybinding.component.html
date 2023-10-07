@@ -1,0 +1,8 @@
+<p>twowaybinding works!</p>
+<input type="text" #cou placeholder="enter coursename">
+<input type="text" #fee placeholder="enter course fee">
+<button mat-raised-button color="primary"(click)="getcourse(cou)" >cname</button>
+<button (click)="getfees(fee)">cfee</button>
+<br>
+My course is:{{course}}
+My fees is:{{fees}}

@@ -1,0 +1,10 @@
+
+<h3 *ngIf="isCheck" style="color:red;">codinghub</h3>
+<h3 *ngIf="isCheck;then tblock else eblock" style="color:red;"></h3>
+<ng-template #eblock>
+     <h4 style="color:blue">else block</h4>
+</ng-template>
+<ng-template #tblock>
+   <h2>hey i am in tblock</h2>
+   <p>hello tblock</p>
+</ng-template>

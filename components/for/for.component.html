@@ -1,0 +1,18 @@
+<p>for works!</p>
+<h1 style="color:red">GROUP</h1>
+<h2 *ngFor="let x of names">{{x}}</h2>
+<h1 style="color:red">INDEXES</h1>
+<h2 *ngFor="let x of names;index as i" >{{x}}"---->"{{i}}</h2>
+<h1 style="color:red">even</h1>
+<h2 *ngFor="let x of names;even as e" >{{x}}"---->"{{e}}</h2>
+<h1 style="color:red">odd</h1>
+<h2 *ngFor="let x of names;odd as o" >{{x}}"---->"{{o}}</h2>
+<p style="color:red">without looping</p>
+<h2 *ngFor="let x of emp |keyvalue">
+    {{x.key}}--->{{x.value | json}}</h2>
+    <p style="color:red">with looping</p>
+    <h2 *ngFor="let x of emp">
+        <h2 *ngFor="let y of x | keyvalue">
+        {{y.key}}--->{{y.value}}
+    </h2>
+</h2>
